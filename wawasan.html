@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css
+" rel="stylesheet" integrity="sha384-
+1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+crossorigin="anonymous">
+<!-- JQuery Link -->
+
+<script type="text/javascript" src="assets/jquery-
+3.6.0.min.js"></script>
+
+<script type="text/javascript" src="assets/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/jquery-ui.css">
+<!-- LInk CSS -->
+<link rel="stylesheet" type="text/css" href="assets/style.css">
+<title>Wawasan</title>
+<script type="text/javascript">
+$(function(){
+$("#dialogku").dialog({
+autoOpen:false,
+show:'blind',
+hide:'explode'
+
+});
+$('#dibuka').click(function(){
+$('#dialogku').dialog('open');
+return false;
+});
+});
+</script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark main-nav"
+style="background-color: #003566;" >
+<div class="container py-2">
+<a class="navbar-brand" href="#">
+
+<img src="home.png" alt="" width="170" height="100" class="d-
+inline-block align-text-top">
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+
+data-bs-target="#navbarSupportedContent" aria-
+controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
+
+navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ms-auto ">
+<li class="nav-item">
+
+<a class="nav-link" aria-current="page"
+href="index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="objekwisata.html">Objek Wisata</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="sarana.html">Sarana Akomodasi</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" href="wawasan.html">Wawasan</a>
+</li>
+<form class="d-flex">
+<input class="form-control me-3" type="search"
+placeholder="Pencarian" aria-label="Search">
+<button class="btn btn-success" type="submit">Cari</button>
+</form>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<!-- Carousel -->
+<section>
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+
+<button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide1"></button>
+<button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active" >
+<img src="1.jpg" class="d-block w-100 img-thumbnail" alt="..."
+width="100%" height="500px">
+<div class="carousel-caption d-none d-md-block" >
+  <h2 class="disply-2">Pura Ulun Danu Beratan</h2>
+  <p class="lead">Pura Ulun Danau Beratan terletak di kawasan Bedugul sekitar 55 km dari kota Denpasar, terletak di ketinggian sekitar 1240 m di atas permukaan laut.</p>
+  <button type="button" class="btn btn-success btn-lg" id="dibuka">
+  Jelajahi
+  </button>
+  <button type="button" class="btn btn-warning btn-lg">
+  Video
+  </button>
+  </div>
+  </div>
+  <div class="carousel-item">
+  <img src="2.jpg" class="d-block w-100 img-thumbnail" alt="..."
+  width="100%" height="500px">
+  <div class="carousel-caption d-none d-md-block" >
+  
+  <h2>Pura Lempuyang</h2>
+  <p class="lead">Pura Lempuyang Luhur memiliki gapura setinggi empat meter yang menjadi spot foto primadona. Berlatarkan panorama Gunung Agung dengan langit biru yang magis.</p>
+  <button type="button" class="btn btn-success btn-lg" id="dibuka">
+  Jelajahi
+  </button>
+  <button type="button" class="btn btn-warning btn-lg">
+  Video
+  </button>
+  </div>
+  </div>
+  <div class="carousel-item">
+  <img src="3.jpg" class="d-block w-100 img-thumbnail " alt="..."
+  width="100%" height="500px">
+  <div class="carousel-caption d-none d-md-block" >
+  <h2>Tanah Lot</h2>
+  <p class="lead">Tanah Lot adalah formasi batuan di lepas pantai pulau Bali, Indonesia. Ini adalah rumah bagi kuil ziarah Hindu kuno Pura Tanah Lot, ikon wisata dan budaya yang populer untuk fotografi.</p>
+  <button type="button" class="btn btn-success btn-lg" id="dibuka">
+  Jelajahi
+  </button>
+<button type="button" class="btn btn-warning btn-lg">
+Video
+</button>
+</div>
+</div>
+</div>
+
+<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+  </button>
+  
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+  
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<div id="dialogku">
+<h3>Video Danau Beratan</h3>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/8UFSIwAVSbk" title="YouTube video player"
+
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-
+media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+<!-- Blog Wawasan -->
+<section>
+
+<div class="container">
+<div class="row">
+<div class="col-md-8">
+<!-- Breadcrumb -->
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">Home</a></li>
+
+<li class="breadcrumb-item active" aria-
+current="page">Wawasan</li>
+
+
+</ol>
+<div class="col-md-4">
+  <div class="row">
+  <div class="col">
+  <h3 class="text-center">Kategori
+  
+  Berita</h3>
+  
+  <hr>
+  <ul class="list-group">
+  
+  <li class="list-group-item d-
+  flex justify-content-between">
+  
+  <a href="#"
+  
+  class="text-info">Objek Wisata</a>
+  
+  <span class="badge
+  
+  badge-primary badge-pill bg-info">10</span>
+  
+  </li>
+  
+  <li class="list-group-item d-
+  flex justify-content-between">
+  
+  <a href="#"
+  
+  class="text-info">Sarana Akomodasi</a>
+  
+  <span class="badge
+  
+  badge-primary badge-pill bg-info">20</span>
+</nav>
+
+<hr>
+<div class="row">
+<div class="col-md-5">
+    
+<figure>
+
+<img src="1.jpg" class="img-thumbnail">
+
+<figcaption>Pura Ulun Danau Beratan</figcaption>
+
+</figure>
+</div>
+<div class="col-md-7">
+<h3><a href="#">Pura Ulun Danau Beratan</a></h3>
+<p class="lead">Pura Ulun Danau Beratan adalah sebuah pura Hindu Bali yang terletak di pulau Bali, Indonesia. Sebagai salah satu Pura Kahyangan Jagat, Pura Ulun Danu Batur merupakan salah satu pura terpenting di Bali yang berperan sebagai pemelihara keharmonisan dan stabilitas seluruh pulau. Pura Ulun Danu Batur mewakili arah Utara dan didedikasikan untuk dewa Wisnu dan dewi lokal Dewi Danu, dewi Danau Batur, danau terbesar di ...</p>
+
+<div class="text-muted">
+<small>Moh. Rizqi Nafil,</small>
+<small>12 Januari 2022,</small>
+<small>25 comments</small>
+</div>
+</div>
+<hr>
+</div>
+<div class="row">
+<div class="col-md-6">
+<figure>
+
+<img src="2.jpg" class="img-thumbnail">
+
+<figcaption>Pura Lempuyang</figcaption>
+
+</figure>
+</div>
+<div class="col-md-6">
+<h3><a href="#">Pura Lempuyang</a></h3>
+<p class="lead">Pura Penataran Agung Lempuyang adalah sebuah pura atau pura Hindu Bali yang terletak di lereng Gunung Lempuyang di Karangasem, Bali. Pura Penataran Agung Lempuyang dianggap sebagai bagian dari kompleks pura yang mengelilingi Gunung Lempuyang, salah satu pura yang sangat dihormati di ...</p>
+
+<div class="text-muted">
+<small>Dirham,</small>
+<small>15 Januari 2022,</small>
+<small>13 comments</small>
+</div>
+</div>
+<hr>
+</div>
+<div class="row">
+
+<div class="col-md-6">
+<figure>
+
+<img src="3.jpg" class="img-thumbnail">
+
+<figcaption>Tanah Lot</figcaption>
+
+</figure>
+</div>
+<div class="col-md-6">
+<h3><a href="#">Tanah Lot</a></h3>
+<p class="lead">Pura Tanah Lot adalah salah satu Pura (Tempat Ibadah Umat Hindu) yang sangat disucikan di Bali, Indonesia. Di sini ada dua pura yang terletak di atas batu besar. Satu terletak di atas bongkahan batu dan satunya terletak di atas tebing mirip dengan Pura Uluwatu. Pura Tanah Lot ini merupakan ...</p>
+
+<div class="text-muted">
+<small>Zulfikar,</small>
+<small>18 Januari 2022,</small>
+<small>31 comments</small>
+</div>
+</div>
+<hr>
+</div>
+<div class="row">
+<div class="col-md-6">
+<figure>
+
+<hr>
+</div>
+<nav aria-label="Page navigation example">
+<ul class="pagination justify-content-center">
+
+<li class="page-item">
+<a class="page-link">Previous</a>
+</li>
+<li class="page-item"><a class="page-link"
+href="#">1</a></li>
+<li class="page-item"><a class="page-link"
+href="#">2</a></li>
+<li class="page-item"><a class="page-link"
+href="#">3</a></li>
+<li class="page-item">
+<a class="page-link" href="#">Next</a>
+
+</li>
+</ul>
+</nav>
+</div>
+
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- end blog -->
+
+<footer class="text-white text-center" style="background-color:#003566;">
+<div class="container-fluid" style="background-color:#003566"><footer class="page-footer font-small blue">
+    <hr>
+    <div class="footer-copyright text-center py-3">
+        <p>@2021.ALL RIGHT RESERVERD.</p>
+    </div> 
+  </footer>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap JS -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.mi
+n.js" integrity="sha384-
+ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"></script>
+</body>
+</html>
